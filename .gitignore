@@ -5,3 +5,7 @@ test/scratch/
 .imd/
 artifacts/*.sol/
 artifacts/build-info/
+!artifacts/
+!artifacts/abis/
+!artifacts/abis/VolatilityGuardHook.json
+!artifacts/abis/VolatilityGuardToken.json
