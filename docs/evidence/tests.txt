@@ -1,0 +1,64 @@
+No files changed, compilation skipped
+
+Ran 1 test for test/Reentrancy.t.sol:ReentrancyTest
+[PASS] test_hostileTokenSettlementCannotForgeCallbackOrUnlock() (gas: 1324590)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 12.71ms (733.67µs CPU time)
+
+Ran 1 test for test/Bootstrap.t.sol:BootstrapTest
+[PASS] test_tokenOnlyBootstrap() (gas: 923287)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 12.90ms (918.04µs CPU time)
+
+Ran 5 tests for test/Token.t.sol:TokenTest
+[PASS] testFuzz_transferConserves(uint256) (runs: 256, μ: 47972, ~: 48155)
+[PASS] test_allowanceAndInfiniteAllowance() (gas: 77396)
+[PASS] test_metadataAndSupply() (gas: 16127)
+[PASS] test_noAdminMint() (gas: 6378)
+[PASS] test_rejectZeroAndInsufficient() (gas: 13058)
+Suite result: ok. 5 passed; 0 failed; 0 skipped; finished in 40.47ms (38.58ms CPU time)
+
+Ran 19 tests for test/Guard.t.sol:GuardTest
+[PASS] testFuzz_accounting(bool,bool,uint96) (runs: 256, μ: 182328, ~: 184191)
+[PASS] testFuzz_poolIsolation(uint24) (runs: 256, μ: 307472, ~: 307373)
+[PASS] test_bothDirectionsAndModes() (gas: 546489)
+[PASS] test_budgetRefillsWithoutIdentity() (gas: 273153)
+[PASS] test_callbackOrderAndCheckpointReentrancy() (gas: 132264)
+[PASS] test_callbackPoolMismatch() (gas: 119600)
+[PASS] test_edgeAmount() (gas: 58586)
+[PASS] test_initializeAtPriceEdges() (gas: 277552)
+[PASS] test_isolation() (gas: 308069)
+[PASS] test_largeSwapRevertsAtomically() (gas: 574683)
+[PASS] test_lowLiquidityExit() (gas: 185742)
+[PASS] test_permissions() (gas: 12108)
+[PASS] test_ringBoundaryDoesNotForgetReference() (gas: 267913)
+[PASS] test_splitVolumeCannotEvade() (gas: 2283792)
+[PASS] test_staleRecoveryAndExit() (gas: 411229)
+[PASS] test_stressBoundedRing() (gas: 19955262)
+[PASS] test_twapUsesTimeBeforeSwapAndEwmaUpdates() (gas: 272893)
+[PASS] test_unauthorizedAllEnabledCallbacks() (gas: 23594)
+[PASS] test_wrongPoolAndUninitialized() (gas: 33226)
+Suite result: ok. 19 passed; 0 failed; 0 skipped; finished in 40.52ms (75.33ms CPU time)
+
+Ran 2 tests for test/Invariant.t.sol:GuardInvariantTest
+[PASS] invariant_boundedState() (runs: 64, calls: 4096, reverts: 0)
+
+╭----------+----------+-------+---------+----------╮
+| Contract | Selector | Calls | Reverts | Discards |
++==================================================+
+| Handler  | advance  | 2044  | 0       | 0        |
+|----------+----------+-------+---------+----------|
+| Handler  | trade    | 2052  | 0       | 0        |
+╰----------+----------+-------+---------+----------╯
+
+[PASS] invariant_supplyAndManagerAccounting() (runs: 64, calls: 4096, reverts: 0)
+
+╭----------+----------+-------+---------+----------╮
+| Contract | Selector | Calls | Reverts | Discards |
++==================================================+
+| Handler  | advance  | 2044  | 0       | 0        |
+|----------+----------+-------+---------+----------|
+| Handler  | trade    | 2052  | 0       | 0        |
+╰----------+----------+-------+---------+----------╯
+
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 763.66ms (1.44s CPU time)
+
+Ran 5 test suites in 772.45ms (870.26ms CPU time): 28 tests passed, 0 failed, 0 skipped (28 total tests)

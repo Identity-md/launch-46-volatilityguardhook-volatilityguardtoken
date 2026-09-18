@@ -1,0 +1,7 @@
+{
+  "observed_at_utc": "2026-09-18T02:54:24.590515+00:00",
+  "rpc": "https://ethereum-sepolia-rpc.publicnode.com",
+  "address": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+  "kind": "read-only RPC identity and code presence, not source verification",
+  "error": "HTTP Error 403: Forbidden"
+}

@@ -1,0 +1,20 @@
+Compiling 48 files with Solc 0.8.26
+Solc 0.8.26 finished in 996.04ms
+Compiler run successful!
+
+Ran 6 tests for test/scratch/univ4_hook/Token.protected.t.sol:TokenProtectedTest
+[PASS] test_decimalsMatchTheManifest() (gas: 8471)
+[PASS] test_mintsTheWholeSupplyToItsDeployer() (gas: 12308)
+[PASS] test_noCommonAdminCallIncreasesSupply() (gas: 47414)
+[PASS] test_notEvenTheDeployerCanMintMore() (gas: 10616)
+[PASS] test_runtimeCodeHasNoDelegatecallOrSelfdestruct() (gas: 560230)
+[PASS] test_transferMovesExactlyWhatItWasAsked() (gas: 46966)
+Suite result: ok. 6 passed; 0 failed; 0 skipped; finished in 8.20ms (2.09ms CPU time)
+
+Ran 3 tests for test/scratch/univ4_hook/Hook.protected.t.sol:HookProtectedTest
+[PASS] test_callbacksRefuseCallersOtherThanThePoolManager() (gas: 18820)
+[PASS] test_permissionsMatchTheDeclaredFlags() (gas: 10896)
+[PASS] test_runtimeCodeHasNoEscapeHatch() (gas: 5218408)
+Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 30.44ms (4.78ms CPU time)
+
+Ran 2 test suites in 38.11ms (38.64ms CPU time): 9 tests passed, 0 failed, 0 skipped (9 total tests)

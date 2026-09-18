@@ -1,0 +1,14 @@
+{
+  "CallbackOrder()": "0xbb74402e",
+  "InsufficientAllowance()": "0x13be252b",
+  "InsufficientBalance()": "0xf4d678b8",
+  "InvalidAmount()": "0x2c5211c6",
+  "InvalidManager()": "0x34e70f7a",
+  "InvalidPool()": "0x2083cd40",
+  "InvalidRecipient()": "0x9c8d2cd2",
+  "LowLiquidity()": "0x878f5b02",
+  "PriceDeviation(uint256,uint256)": "0xa9a9c04c",
+  "Unauthorized()": "0x82b42900",
+  "Uninitialized()": "0x1c72fad4",
+  "VolumeBudget(uint256,uint256)": "0xefc123c2"
+}

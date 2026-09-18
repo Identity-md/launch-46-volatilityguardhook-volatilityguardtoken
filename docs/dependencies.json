@@ -1,0 +1,14 @@
+{
+  "v4-core": [
+    "Uniswap/v4-core",
+    "46c6834698c48bc4a463a86d8420f4eb1d7f3b75"
+  ],
+  "forge-std": [
+    "foundry-rs/forge-std",
+    "0d006dafa09d0b3722575acd29338b79c23e7c2f"
+  ],
+  "solmate": [
+    "transmissions11/solmate",
+    "4b47a19038b798b4a33d9749d25e570443520647"
+  ]
+}
