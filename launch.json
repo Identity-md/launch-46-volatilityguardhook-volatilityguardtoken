@@ -1,0 +1,27 @@
+{
+  "kind": "univ4_hook",
+  "hook": {
+    "contract": "VolatilityGuardHook",
+    "constructorArgs": [
+      "0xe03a1074c86cfedd5c142c4f04f1a1536e203543"
+    ],
+    "permissions": [
+      "afterInitialize",
+      "beforeSwap",
+      "afterSwap"
+    ]
+  },
+  "token": {
+    "contract": "VolatilityGuardToken",
+    "name": "Volatility Guard Lab",
+    "symbol": "VGL",
+    "decimals": 18
+  },
+  "pool": {
+    "pairedCurrency": "0x0000000000000000000000000000000000000000",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "792281625142643375935439503360000"
+  },
+  "notes": "VolatilityGuard Lab is a standalone Sepolia contract launch; no website or IPFS deliverable. VolatilityGuardHook takes only the immutable PoolManager argument; VolatilityGuardToken has no constructor arguments. Enabled hook address bits total 4288 (0x10c0); all other permissions, including return-delta and liquidity callbacks, are false. Callbacks authenticate PoolManager and ignore sender/hookData identity. No discretionary admin, custody or fee override is implemented. Guards are isolated by full PoolId, with a bounded 16-observation tick TWAP, absolute-tick-movement EWMA, adaptive deviation limits and a shared per-pool leaky volume bucket charged from realized deltas with upward rounding. Both directions and exact-input/output swaps are supported, subject to core settlement, price, liquidity and volume limits. NORMAL/WARMUP/GUARDED/RECOVERY transitions include stale-history reset and deterministic timed recovery. Rejected swaps roll back all transitions; permissionless checkpoint can persist observed health. LP additions and exits have no hook gate. Arbitrary currency addresses are supported within core token-accounting assumptions. Internal oracle manipulation, budget griefing, JIT liquidity and MEV within limits remain possible; this is not total MEV protection. For final token T and mined hook H, the pool key is (address(0), T, uint24(3000), int24(60), H); PoolId is keccak256 of those five ABI-encoded words, not packed encoding. The opening sqrtPriceX96 is 10000 * 2^96, giving 0.00000001 ETH/VGL at 18 decimals. Token-only bootstrap uses the widest aligned range below the opening price and integer liquidity math; buy VGL with ETH first, since reverse swaps need accrued ETH liquidity. Use existing verified periphery; local test helpers are not deployment artifacts. Source includes tests, implementation-derived ABIs and architecture/integration documentation. Independent canonical-manifest review, publication, signed artifact linkage, admission and verified deployment remain service steps; this manifest asserts no completed deployment or live bytecode verification. Deployment policy is separately versioned and is not set by these notes."
+}
